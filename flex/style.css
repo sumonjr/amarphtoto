@@ -1,0 +1,54 @@
+/*.parent {
+	background-color: green;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+}
+.child {
+	margin: 5px;
+	padding: 20px;
+	width: 50%;
+	height: 200px;
+	background-color: yellow;
+	color: #000;
+	float: left;
+	order: 0;
+}
+.child:first-child {
+	order: 1;
+}*/
+
+header, footer, .box {
+	background-color: green;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+	margin: 5px;
+}
+.row {
+	display: flex;
+}
+.intro, .more {
+	width: 70%;
+}
+.img, .call {
+	width: 25%;
+	margin-left: 5%;
+}
+@media (max-width: 560px) {
+	header, footer, .box{
+		margin:5px 0;
+	}
+	.row {
+	display: block;
+}
+.intro, .more {
+	width: 100%;
+}
+.img, .call {
+	width: 100%;
+	margin-left: 0;
+}
+}
